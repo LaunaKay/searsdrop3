@@ -1,3 +1,147 @@
-<div>
-<h1>FLASH SALE</h1>
-</div>
+    <link rel="stylesheet" href="css/flipclock.css">
+
+    <!-- custom -->
+    <script src="js/flipclock.min.js"></script>
+    <script type="text/javascript">
+
+
+       var clock;
+        $(document).ready(function() {
+            clock = $('.clock').FlipClock(3600 * 24 * 3, {
+                clockFace: 'DailyCounter',
+                countdown: true
+            });
+
+            var userCounter = $('.userCounter').FlipClock(100, {
+                clockFace: 'Counter'
+            });
+
+            setTimeout(function() {
+                setInterval(function() {
+                    userCounter.increment();
+                }, 1000);
+            });
+
+
+        });
+
+    </script>
+
+<header>
+    <script type="text/javascript">
+        function disableFunction() {
+            document.getElementById("vote").className = 'btn btn-info disabled';
+        }
+    </script>
+</header>
+
+<section class="no-padding" id="flashsale">
+    <div class="container-fluid" style="background-color:lightgrey">
+        <div class="row" style="height: 850px; margin-top:75px;">
+            <div class="col-sm-4">
+                <div>
+                    NAME NAME NAME
+                </div>
+                <a href="#" class="portfolio-box">
+                    <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <button id="vote" type="button" onclick="disableFunction();" class="btn btn-success">BUY</button>
+                <div>
+                    Actual Price: $100.00
+                </div>
+                <div>
+                    You Save: $20.00
+                </div>
+                <div>
+                    <!-- Facebook -->
+                    <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
+                        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook"/>
+                    </a>
+
+                    <!-- Google+ -->
+                    <a href="https://plus.google.com/share?url=https://simplesharebuttons.com" target="_blank">
+                        <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google"/>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com"
+                       target="_blank">
+                        <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn"/>
+                    </a>
+
+                    <!-- Pinterest -->
+                    <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
+                        <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest"/>
+                    </a>
+                </div>
+                <div>Customers Voted</div><div class="userCounter"></div>
+            </div>
+            <div class="clock"></div>
+        </div>
+        <script>
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+            $("#one").append("your text to append");
+
+            $("#one").animate({
+                scrollTop:$("#one")[0].scrollHeight - $("#one").height()
+            },20000,function(){
+            });
+</script>
+    <div>
+        <h2>Chat</h2>
+            <div class="container">
+                <div class="inner">
+                    <textarea id="one" class="inner" style="height:500px; width:250px;">
+                    </textarea>
+                </div>
+            </div>
+    </div>
+</section>
+

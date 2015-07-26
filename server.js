@@ -7,7 +7,7 @@ var server = app.listen(8888, function()
 });
 
 // Sockets
-// io = require('socket.io').listen(server)
+io = require('socket.io').listen(server)
 
 // Body Parser
 var bodyParser = require('body-parser');

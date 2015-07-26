@@ -32,6 +32,8 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+
 </head>
 
 <body id="page-top">
@@ -89,7 +91,7 @@
                     <h2 class="section-heading">We've got what you need!</h2>
                     <hr class="light">
                     <p class="text-faded">Browse cool stuff, vote, bring your friends, get a deal!</p>
-                    <a href="#" class="btn btn-default btn-xl">Get Started!</a>
+                    <a href="#flashsale" class="btn btn-default btn-xl">Get Started!</a>
                 </div>
             </div>
         </div>
@@ -138,9 +140,14 @@
         </div>
     </section>
 
+    <div ng-view="">
+    </div>
+
     <section class="no-padding" id="coolstuff">
         <div class="container-fluid">
             <div class="row no-gutter">
+                <h1 style="text-align:center">VOTE </h1>
+                <h2 style="text-align:center">for your favorite products to land in the next flash sale!</h2>
                 <div class="col-lg-4 col-sm-6">
                     <a href="http://www.sears.com/dorel-home-furnishings-black-small-spaces-configurable-sectional/p-00865092000P?sellerId=SEARS&prdNo=38&blockNo=38&blockType=G38" class="portfolio-box">
                         <img src="img/livingroom.jpg" style="height:350px width:650px"class="img-responsive" alt="">
@@ -240,17 +247,6 @@
             </div>
         </div>
     </section>
-
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>FLASH SALE!</h2>
-                <a href="#/flashsaleview" class="btn btn-default btn-xl wow tada">Ready? Click!</a>
-            </div>
-        </div>
-    </aside>
-    <div ng-view="">
-    </div>
 
     <section id="contact">
         <div class="container">

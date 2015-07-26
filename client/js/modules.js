@@ -15,20 +15,5 @@ app.config(function($routeProvider)
 		controllerAs: 'main',
 		templateUrl: '/partials/flashsaleview.partial.html'
 	})
-	.when('/orders', {
-		controller: 'CustomersController',
-		controllerAs: 'orderC',
-		templateUrl: '/partials/orders.partial.html'
-	})
-	.when('/customers', {
-		controller: 'CustomersController',
-		controllerAs: 'custC',
-		templateUrl: '/partials/customers.partial.html'
-	})
-	.when('/settings', {
-		// controller: 'CustomersController',
-		// controllerAs: 'custC',
-		templateUrl: '/partials/settings.partial.html'
-	})
-	.otherwise('/dashboard')
+	.otherwise('/')
 });
