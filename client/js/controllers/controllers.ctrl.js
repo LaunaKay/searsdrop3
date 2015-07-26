@@ -1,4 +1,4 @@
-app.controller('MainController', function(ProductFactory, CustomerFactory)
+app.controller('MainController', function(ProductFactory)
 {
 	console.log("MainController Loaded");
     var object = this;
@@ -12,15 +12,4 @@ app.controller('MainController', function(ProductFactory, CustomerFactory)
         });
     }
     getProducts();
-
-    var getCustomers = function()
-    {
-        CustomerFactory.getCustomers(function(customers)
-        {
-            object.customers = customers;
-            console.log('ctrl.customers', object.customers);
-        });
-    };
-    console.log('executing getCustomers');
-    getCustomers();
 })

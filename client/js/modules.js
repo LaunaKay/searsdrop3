@@ -9,11 +9,11 @@ app.config(function($routeProvider)
 		// controllerAs: 'usersCtrl',
 		templateUrl: '/partials/dashboard.partial.html'
 	})
-	.when('/products',
+	.when('/flashsaleview',
 	{
-		controller: 'ProductsController',
-		controllerAs: 'prodC',
-		templateUrl: '/partials/products.partial.html'
+		controller: 'MainController',
+		controllerAs: 'main',
+		templateUrl: '/partials/flashsaleview.partial.html'
 	})
 	.when('/orders', {
 		controller: 'CustomersController',
