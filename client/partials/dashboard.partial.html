@@ -1,0 +1,30 @@
+<div class="container" ng-controller="MainController as main">
+    <div class="col-md-8">
+        <h1>Products</h1>
+        <label>Search:  <input ng-model="searchProduct"></label>
+        <div class="col-sm-6 col-md-3" ng-repeat="product in main.products | filter:searchProduct | limitTo:4">
+            <div class="thumbnail">
+                <img src="{{product.image}}"
+                    alt="{{product.item}}">
+                </div>
+            <div class="caption">
+                <h3>{{product.item}}</h3>
+                <p>({{product.quantity}} left)</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-controller="CustomersController as orderC">
+    <h1>Recent Orders</h1>
+    <ul class="list-unstyled" ng-repeat="customer in orderC.customers | filter: customer.name | orderBy:customer.updated:reverse | limitTo:5">
+        <li style="font-size:16px;">{{customer.name}} ordered <span ng-repeat="order in customer.orders">{{order.quantity}}</span><span ng-repeat="order in customer.orders">{{order.product_id}}...</span><span ng-repeat="order in customer.orders" am-time-ago="order.updated">{{order.updated}} ago</span>
+       </li>
+    </ul>
+</div>
+<div ng-controller="CustomersController as custC">
+    <h1>New Customers</h1>
+    <ul class="list-unstyled" ng-repeat="customer in custC.customers | filter:customer.name | orderBy:customer.created:reverse | limitTo: 5">
+        <li style="font-size:16px;">{{customer.name}} joined the store <span am-time-ago="customer.created">{{customer.created}} </span>
+       </li>
+    </ul>
+</div>
